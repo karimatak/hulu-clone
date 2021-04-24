@@ -8,7 +8,7 @@ export default function Home({ results }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Hulu clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
