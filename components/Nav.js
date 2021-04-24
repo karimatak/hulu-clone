@@ -1,9 +1,9 @@
-import { ReceiptRefundIcon } from "@heroicons/react/outline";
-
 import React from "react";
 import requests from "../utils/requests";
+import { useRouter } from "next/router";
 
 function Nav() {
+  const router = useRouter();
   return (
     <nav className="relative h-auto">
       <div
@@ -14,6 +14,7 @@ function Nav() {
           <h2
             key={key}
             className="last:pr-24 cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-red-500"
+            onClick={() => router.push(`/?genre=${key}`)}
           >
             {title}
           </h2>
